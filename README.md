@@ -50,5 +50,3 @@ Users should be able to:
 - Website - [Andrea Bellver García](https://www.linkedin.com/in/andrea-bellver-garcia/)
 - Frontend Mentor - [@ponisworld](https://www.frontendmentor.io/profile/ponisworld)
 - Twitter - [@poniscript](https://www.twitter.com/poniscript)
-
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
