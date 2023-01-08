@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap');
+
+/*
+    BASIC ASPECTS
+*/
+:root {
+    --blue: hsl(223, 87%, 63%);
+
+    --pale-blue: hsl(223, 100%, 88%);
+    --light-red: hsl(354, 100%, 66%);
+
+    --gray: hsl(0, 0%, 59%);
+    --very-dark-blue: hsl(209, 33%, 12%);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 1rem;
+}
+
+img {
+    max-width: 100%;
+}
+
+/*
+    PAGE
+*/
+
+header {
+    margin: 4rem auto 2rem auto;
+    width: 100%;
+    text-align: center;
+}
+
+header img {
+    width: 4rem;
+}
+
+/*
+    MAIN TEXT
+*/
+main {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h1 {
+    font-weight: 300;
+    color: var(--gray);
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 1.75rem;
+}
+
+h1 strong {
+    color:hsl(209, 33%, 12%);
+    font-size: inherit;
+}
+
+main > p {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+/*
+    MAIN FORM
+*/
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+input, button {
+    width: 80vw;
+    padding: 0.8rem 1.5rem;
+    max-width: 400px;
+    border-radius: 25px;
+    margin-bottom: 0.5rem;
+    border: var(--pale-blue) 2px solid;
+    font-size: 0.9rem;
+}
+
+input::placeholder {
+    color: var(--pale-blue);
+}
+
+button {
+    background-color: var(--blue);
+    color: hsl(255, 100%, 100%);
+    font-weight: 600;
+}
+/*
+    DASHBOARD IMG
+*/
+main img {
+    margin: 1rem auto 5rem auto;
+    width: 90%;
+    max-width: 750px;
+}
+
+/*
+    SOCIAL SECTION
+*/
+
+section.social i {
+    color: var(--blue);
+    margin: 0 0.5rem;
+    padding: 0.5rem;
+    border-radius: 48%;
+    border: 0.1px solid var(--pale-blue);
+}
+
+section.social i:first-of-type {
+    padding: 0.5rem 0.7rem;
+}
+
+/*
+     MAIN FOOTER
+*/
+main > footer {
+    text-align: center;
+    color: var(--gray);
+    margin: 1rem auto 3rem auto;
+}
+
+a:hover i {
+    background-color: var(--blue);
+    color: hsl(255, 100%, 100%);
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: hsl(223, 87%, 75%);;
+}
+
+@media screen and (min-width:800px) {
+    form {
+        flex-direction: row;
+    }
+    button {
+        margin-left: 1rem;
+        width: 200px;
+    }
+}
