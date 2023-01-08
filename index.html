@@ -27,11 +27,14 @@
     <p>Subscribe and get notified</p>
 
     <form method="post" novalidate>
-      <input type="email" name="email" id="emailInput" placeholder="Your email address..."> 
-      
+      <div>
+        <input type="email" name="email" id="emailInput" placeholder="Your email address..."> 
+        <p class="error"></p>
+       </div>
+
       <button type="submit">Notify Me</button>
     </form>
-
+   
     <img src="./img/illustration-dashboard.png" alt="Dashboard">
 
     <section class="social">
@@ -44,6 +47,12 @@
 
     <footer>&copy; Copyright Ping. All rights reserved.</footer>
   </main>
+
+  <div id="thankYou" class="none">
+    <p>Thank you so much for subscribing! We'll send an email to <em class="value"></em> when we know how to Back-End!</p>
+    <i class="fa-solid fa-truck-fast"></i>
+  </div>
+
   <footer>
     <p class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 

@@ -29,6 +29,14 @@ img {
     PAGE
 */
 
+body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 header {
     margin: 4rem auto 2rem auto;
     width: 100%;
@@ -129,6 +137,11 @@ main > footer {
     margin: 1rem auto 3rem auto;
 }
 
+body > footer {
+    margin: 5rem auto;
+    text-align: center;
+}
+
 a:hover i {
     background-color: var(--blue);
     color: hsl(255, 100%, 100%);
@@ -138,6 +151,49 @@ button:hover {
     cursor: pointer;
     background-color: hsl(223, 87%, 75%);;
 }
+
+input.invalid {
+    border: var(--light-red) 3px solid;
+}
+
+#thankYou {
+    padding: 5rem;
+    width: 50%;
+    background-color: var(--pale-blue);
+    margin: 15vh auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#thankYou p {
+    text-align: center;
+    width: 50vw;
+    max-width: 600px;
+    color: var(--very-dark-blue);
+}
+
+#thankYou i {
+    font-size: 2rem;
+    display: inline-block;
+    color: var(--blue);
+}
+
+.none {
+    display: none;
+}
+#thankYou.none {
+    display: none;
+}
+
+p.error {
+    color: var(--light-red);
+    font-size: 0.7rem;
+    margin-left: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+
 
 @media screen and (min-width:800px) {
     form {
