@@ -8,24 +8,46 @@
   
   <title>Frontend Mentor | Ping coming soon page</title>
 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
   <link rel="stylesheet" href="./css/styles.css">
 
   <script src="./js/index.js" defer></script>
 </head>
 <body>
 
-  We are launching soon!
 
-  Subscribe and get notified
+  <header>
+    <img src="./img/logo.svg" alt="Ping logo">
+  </header>
+    
+  <main>
+    <h1>We are launching <strong>soon!</strong></h1>
 
-  Notify Me
+    <p>Subscribe and get notified</p>
 
-  &copy; Copyright Ping. All rights reserved.
+    <form method="post" novalidate>
+      <input type="email" name="email" id="emailInput"> 
+      
+      <button type="submit">Notify Me</button>
+    </form>
 
+    <img src="./img/illustration-dashboard.png" alt="Dashboard">
+
+    <section class="social">
+      <i class="fa-brands fa-facebook-f"></i>
+
+      <i class="fa-brands fa-twitter"></i>
+
+      <i class="fa-brands fa-instagram"></i>
+    </section>
+
+    <footer>&copy; Copyright Ping. All rights reserved.</footer>
+  </main>
   <footer>
     <p class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
+      Coded by <a href="#">Andrea Bellver García</a>.
     </p>
   </footer>
 </body>
