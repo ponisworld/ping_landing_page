@@ -147,6 +147,14 @@ a:hover i {
     color: hsl(255, 100%, 100%);
 }
 
+a {
+    color: var(--blue);
+}
+
+a:hover {
+    color: var(--pale-blue);
+}
+
 button:hover {
     cursor: pointer;
     background-color: hsl(223, 87%, 75%);;
